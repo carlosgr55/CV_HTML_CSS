@@ -152,15 +152,34 @@
 }
 
 @media (min-width: 768.1px) {
+
+    .contLaboral{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+
+  .laboral:nth-child(1){
+    grid-row: span 1;
+    grid-column: span 2;
+  }  
+  .laboral:nth-child(3){
+    grid-row: span 1;
+    grid-column: span 3;
+  }  
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   header p {
     text-align: center;
     font-size: 2rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  h3{
+    font-size: 2.5rem;
   }
 
   nav {
@@ -171,6 +190,15 @@
   }
   nav p {
     text-align: center;
+    font-size: 2rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+  .laboral p{
+    font-size: 2rem;
+  }
+  .laboral li{
     font-size: 2rem;
   }
 }
