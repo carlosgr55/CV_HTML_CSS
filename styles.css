@@ -1,0 +1,23 @@
+@media (max-width: 468px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 768px) {
+}
+
+header {
+  background-color: #9d7761;
+  height: 100%;
+}
+
+h1{
+    text-align: center;
+    color: #60aea9;
+    
+}
+
+body{
+    background-color: #eae4dc;
+}
