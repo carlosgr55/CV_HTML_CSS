@@ -33,13 +33,19 @@
   .lenguaje {
     gap: 5px;
   }
+  .lenguaje:nth-child(1) {
+    grid-column: span 1;
+  }
   .lenguaje:nth-child(3) {
     grid-column: span 2;
   }
-  .idioma:nth-child(3) {
+
+  .idioma:nth-child(1){
     grid-column: span 2;
   }
-
+  .idioma:nth-child(3){
+    grid-column: span 1;
+  }
   #idiomas {
     align-items: center;
   }
