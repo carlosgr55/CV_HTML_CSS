@@ -12,6 +12,11 @@
       <p>
         Estudiante de quinto semestre de Ingeniería en Sistemas Computacionales
       </p>
+      <p>Mi canción favoria del momento:</p>
+      <br>
+      <img src="https://i.scdn.co/image/ab67616d0000b273e46a867e57386a58cdf72c78" alt="">
+      <br>
+      <audio src="media\Natalia Lafourcade - Hasta la Raíz.mp3" controls></audio>
     </header>
     <h2>Medios de contacto</h2>
 
@@ -132,12 +137,18 @@
                 <article class="habilidad" id="lenguajes">
                     <div class="lenguaje">
                         <p>Java</p>
+                        <br>
+                        <img src="https://cdn-icons-png.flaticon.com/512/152/152760.png" alt="">
                     </div>
                     <div class="lenguaje">
                         <p>Python</p>
+                        <br>
+                        <img src="https://static-00.iconduck.com/assets.00/logo-python-icon-2025x2048-b9y5g0s5.png" alt="">
                     </div>
                     <div class="lenguaje">
                         <p>C++</p>
+                        <br>
+                        <img src="https://img.icons8.com/?size=512&id=44328&format=png" alt="">
                     </div>
                 </article>
             </div>
@@ -146,7 +157,7 @@
                 <h3>Idiomas</h3>
 <br>
                 <article class="habilidad" id="idiomas">
-                    <div class="idioma">
+                    <!--<div class="idioma">
                         <p>Español <span class="nivel">Nativo</span></p>
                     </div>
                     <div class="idioma">
@@ -154,13 +165,55 @@
                     </div>
                     <div class="idioma">
                         <p>Alemán: <span class="nivel">A2</span></p>
-                    </div>
+                    </div>-->
+                    <table border="1">
+                        <tr>
+                            <th>Idioma</th>
+                            <th>Nivel</th>
+                        </tr>
+                        <tr>
+                            <td>Español</td>
+                            <td>Nativo</td>
+                        </tr> 
+                        <tr>
+                            <td>Inglés</td>
+                            <td>B2</td>
+                        </tr> 
+                        <tr>
+                            <td>Alemán</td>
+                            <td>A2</td>
+                        </tr>
+                    </table>
                 </article>
             </div>
         </div>
     </main>
 
+    <footer>
 
+        <h2><svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" stroke-width="2">
+            <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
+          </svg>Deja tu mensaje!!</h2>
+
+          <section class="mensaje">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo" id="correo">
+            <br><br>
+            <label for="comentario">Comentarios:</label>
+            <textarea name="comentario" id="comentario"></textarea>
+            <input type="submit" value="Enviar">
+          </section>
+
+          <section class="video">
+            <video controls>
+                <source src="media\videoprgra.mp4" type="video/mp4">
+            </video>
+          </section>
+
+
+    </footer>
 
 
   </body>
