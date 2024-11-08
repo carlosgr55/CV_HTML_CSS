@@ -1,19 +1,26 @@
 @import url(https://db.onlinewebfonts.com/c/f88131c65699aa3628cba2f1ee8f60d8?family=Bauer+Bodoni+Black);
 
-@media (max-width: 468px){
-  .contLaboral {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
+@media (max-width: 468px) {
+  .contAcad {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
   }
 
-  .laboral:nth-child(1){
+  .contLaboral {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .laboral:nth-child(1) {
     grid-column: span 1;
     grid-row: span 1;
   }
-  .laboral:nth-child(2){
+  .laboral:nth-child(2) {
     grid-column: span 1;
     grid-row: span 1;
-  }.laboral:nth-child(3){
+  }
+  .laboral:nth-child(3) {
     grid-column: span 1;
     grid-row: span 1;
   }
@@ -24,14 +31,13 @@
   }
   .laboral li {
     margin-left: 15%;
-    font-size: .95rem;
-
+    font-size: 0.95rem;
   }
 
   header p {
     text-align: center;
   }
-  h1{
+  h1 {
     font-size: 2.5rem;
   }
   h2 {
@@ -52,28 +58,28 @@
   }
 }
 
-@media (max-width: 768px) and (min-width:468.1px){
+@media (max-width: 768px) and (min-width: 468.1px) {
   .contLaboral {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
   }
 
-  .laboral:nth-child(1){
+  .laboral:nth-child(1) {
     grid-column: 1/2;
   }
-  .laboral:nth-child(2){
+  .laboral:nth-child(2) {
     grid-column: 2/4;
-  }.laboral:nth-child(3){
+  }
+  .laboral:nth-child(3) {
     grid-column: 1/4;
   }
   .laboral p {
     text-align: center;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   .laboral li {
     text-align: center;
-    font-size: .75rem;
-
+    font-size: 0.75rem;
   }
 
   header p {
@@ -146,4 +152,14 @@ body {
 .laboral {
   background-color: #d8b8ae;
   border-radius: 8px;
+}
+
+.academico {
+  background-color: #d8b8ae;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+p{
+    text-align: center;
 }
