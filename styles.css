@@ -1,12 +1,45 @@
 @import url(https://db.onlinewebfonts.com/c/f88131c65699aa3628cba2f1ee8f60d8?family=Bauer+Bodoni+Black);
 
 @media (max-width: 468px) {
-  .contHabi {
-    padding-left: 10%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    align-items: center;
+  .contLaboral {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
+
+  .laboral:nth-child(1) {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .laboral:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .laboral:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .contHabi {
+    align-items: center;
+    gap: 3px;
+  }
+  .habilidad {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: auto;
+    gap: 3px;
+  }
+  .lenguaje {
+    gap: 5px;
+  }
+  .lenguaje:nth-child(3) {
+    grid-column: span 2;
+  }
+  .idioma:nth-child(3) {
+    grid-column: span 2;
+  }
+
   #idiomas {
     align-items: center;
   }
@@ -17,27 +50,10 @@
     gap: 3px;
   }
 
-  .contLaboral {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .laboral:nth-child(1) {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  .laboral:nth-child(2) {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  .laboral:nth-child(3) {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
   .laboral p {
     text-align: center;
 
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .laboral li {
     margin-left: 15%;
@@ -68,7 +84,7 @@
   }
 }
 
-@media (max-width: 768px) or (min-width: 469px) {
+@media (max-width: 768px) and (min-width: 469px) {
   .flex-habi {
     display: flex;
 
@@ -80,7 +96,7 @@
     gap: 50px;
     align-items: center;
   }
-  .habilidad{
+  .habilidad {
     padding-right: 30%;
   }
   .contHabi:nth-child(1) {
@@ -109,7 +125,7 @@
   .laboral li {
     text-align: left;
     padding-right: 5%;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
   .contLaboral:nth-child(1) {
     grid-column: span 2;
@@ -152,21 +168,24 @@
 }
 
 @media (min-width: 768.1px) {
+  .flex-habi {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .contLaboral {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 
-    .contLaboral{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-    }
-
-
-  .laboral:nth-child(1){
+  .laboral:nth-child(1) {
     grid-row: span 1;
     grid-column: span 2;
-  }  
-  .laboral:nth-child(3){
+  }
+  .laboral:nth-child(3) {
     grid-row: span 1;
     grid-column: span 3;
-  }  
+  }
   h1 {
     font-size: 5rem;
   }
@@ -178,7 +197,7 @@
     font-size: 4rem;
   }
 
-  h3{
+  h3 {
     font-size: 2.5rem;
   }
 
@@ -192,13 +211,13 @@
     text-align: center;
     font-size: 2rem;
   }
-  p{
+  p {
     font-size: 2rem;
   }
-  .laboral p{
+  .laboral p {
     font-size: 2rem;
   }
-  .laboral li{
+  .laboral li {
     font-size: 2rem;
   }
 }
@@ -248,9 +267,14 @@ p {
 }
 
 .contHabi {
-  display: grid;
   background-color: #d8b8ae;
   border-radius: 8px;
+  align-items: center;
+}
+
+.habilidad {
+  display: grid;
+  gap: 5px;
 }
 
 .idioma {
