@@ -1,6 +1,16 @@
 @import url(https://db.onlinewebfonts.com/c/f88131c65699aa3628cba2f1ee8f60d8?family=Bauer+Bodoni+Black);
 
 @media (max-width: 468px) {
+
+  #cancion{
+    max-width: 250px;
+    max-height: 250px;
+  }
+  audio{
+    max-width: auto;
+    max-height: 200px;
+  }
+
   .contLaboral {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -91,6 +101,14 @@
 }
 
 @media (max-width: 768px) and (min-width: 469px) {
+  #cancion{
+    max-width: 400px;
+    max-height: 400px;
+  }
+  audio{
+    max-width: auto;
+    max-height: 200px;
+  }
     
   .habilidad {
     grid-template-rows: repeat(3, 1fr);
@@ -185,7 +203,10 @@
 
 @media (min-width: 769px) {
 
-  
+  audio{
+    max-width: auto;
+    max-height: 200px;
+  }
   .habilidad {
     grid-template-rows: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -319,4 +340,10 @@ p {
 
 .nivel {
   color: #7b5144;
+}
+.cancionCont{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
