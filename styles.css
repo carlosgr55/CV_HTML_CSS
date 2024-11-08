@@ -18,13 +18,7 @@
   }
 
   
-  .lenguaje {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-content: center;
-    justify-content: center;
-  }
+ 
 
   .lenguaje img{
     max-width: 25%;
@@ -129,6 +123,29 @@
 }
 
 @media (max-width: 768px) and (min-width: 469px) {
+
+  .mensaje label{
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .tiktok video{
+    align-self: center;
+    max-height: 400px;
+    max-width: 200px;
+  }
+
+  table{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .lenguaje img{
+    max-width: 25%;
+    max-height: 25%;
+    align-self: center;
+  }
+
   #cancion{
     max-width: 400px;
     max-height: 400px;
@@ -149,7 +166,7 @@
     gap: 5px;
   }
   .lenguaje:nth-child(1) {
-    grid-row: span 3;
+    grid-row: span 1;
     grid-column: span 1;
   }
 
@@ -162,12 +179,7 @@
     grid-column: span 1;
   }
 
-  .idioma:nth-child(1) {
-    grid-column: span 2;
-  }
-  .idioma:nth-child(3) {
-    grid-column: span 1;
-  }
+  
 
   #idiomas {
     align-items: center;
@@ -394,4 +406,11 @@ p {
   display: flex;
   flex-direction: column;
   
+}
+.lenguaje {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-content: center;
+  justify-content: center;
 }
