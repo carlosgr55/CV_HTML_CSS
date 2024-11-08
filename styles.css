@@ -40,10 +40,10 @@
     grid-column: span 2;
   }
 
-  .idioma:nth-child(1){
+  .idioma:nth-child(1) {
     grid-column: span 2;
   }
-  .idioma:nth-child(3){
+  .idioma:nth-child(3) {
     grid-column: span 1;
   }
   #idiomas {
@@ -91,25 +91,35 @@
 }
 
 @media (max-width: 768px) and (min-width: 469px) {
-  .flex-habi {
-    display: flex;
-
-    flex-direction: row;
-  }
-  .contHabi {
-    padding-left: 10%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    align-items: center;
-  }
+    
   .habilidad {
-    padding-right: 30%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: auto;
+    gap: 3px;
   }
-  .contHabi:nth-child(1) {
+  .lenguaje {
+    gap: 5px;
+  }
+  .lenguaje:nth-child(1) {
+    grid-row: span 3;
     grid-column: span 1;
   }
 
-  .contHabi:nth-child(2) {
+  .lenguaje:nth-child(2) {
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+  .lenguaje:nth-child(3) {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .idioma:nth-child(1) {
+    grid-column: span 2;
+  }
+  .idioma:nth-child(3) {
     grid-column: span 1;
   }
 
@@ -173,15 +183,30 @@
   }
 }
 
-@media (min-width: 768.1px) {
-  .flex-habi {
-    display: flex;
-    flex-direction: column;
+@media (min-width: 769px) {
+
+  
+  .habilidad {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-left: auto;
     gap: 3px;
   }
+  .lenguaje {
+    gap: 5px;
+  }
+ 
+  
   .contLaboral {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
+  }
+
+  .contAcad {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
   }
 
   .laboral:nth-child(1) {
