@@ -69,19 +69,31 @@
 }
 
 @media (max-width: 768px) and (min-width: 468.1px) {
+
+    .contAcad{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
   .contLaboral {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
   }
 
-  .laboral:nth-child(1) {
-    grid-column: 1/2;
+  .laboral li {
+    margin-left: 10%;
+    font-size: 0.95rem;
   }
-  .laboral:nth-child(2) {
-    grid-column: 2/4;
+  .contLaboral:nth-child(1) {
+    grid-column: span 2;
+}
+  .contLaboral:nth-child(2) {
+    grid-column: span 1;
   }
-  .laboral:nth-child(3) {
-    grid-column: 1/4;
+  .contLaboral:nth-child(3) {
+    grid-column: span 1;
   }
   .laboral p {
     text-align: center;
@@ -97,6 +109,9 @@
   }
   h2 {
     font-size: 2rem;
+  }
+  h1{
+    font-size: 3rem;
   }
 
   nav {
