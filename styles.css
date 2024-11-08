@@ -2,6 +2,20 @@
 
 @media (max-width: 468px) {
 
+  .lenguaje {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .lenguaje img{
+    max-width: 25%;
+    max-height: 25%;
+    align-self: center;
+  }
+
   #cancion{
     max-width: 250px;
     max-height: 250px;
@@ -40,9 +54,7 @@
     margin-left: auto;
     gap: 3px;
   }
-  .lenguaje {
-    gap: 5px;
-  }
+  
   .lenguaje:nth-child(1) {
     grid-column: span 1;
   }
