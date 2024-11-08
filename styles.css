@@ -1,6 +1,16 @@
 @import url(https://db.onlinewebfonts.com/c/f88131c65699aa3628cba2f1ee8f60d8?family=Bauer+Bodoni+Black);
 
 @media (max-width: 468px) {
+  .contHabi {
+    padding-left: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    align-items: center;
+  }
+  #idiomas{
+    align-items: center;
+  }
+
   .contAcad {
     display: flex;
     flex-direction: column;
@@ -160,6 +170,30 @@ body {
   gap: 10px;
 }
 
-p{
-    text-align: center;
+p {
+  text-align: center;
+}
+.flex-habi {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.contHabi {
+  display: grid;
+  background-color: #d8b8ae;
+  border-radius: 8px;
+}
+
+.idioma{
+  background-color: #ba9488;
+  border-radius: 3px;
+}
+.lenguaje {
+  background-color: #9f8279;
+  border-radius: 3px;
+}
+
+.nivel {
+  color: #7b5144;
 }
