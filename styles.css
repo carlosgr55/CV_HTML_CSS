@@ -1,36 +1,33 @@
 @import url(https://db.onlinewebfonts.com/c/f88131c65699aa3628cba2f1ee8f60d8?family=Bauer+Bodoni+Black);
 
 @media (max-width: 468px) {
-  .mensaje label{
+  .mensaje label {
     font-size: 1rem;
     text-align: center;
   }
-  
-  .tiktok video{
+
+  .tiktok video {
     align-self: center;
     max-height: 400px;
     max-width: 200px;
   }
 
-  table{
+  table {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  
- 
-
-  .lenguaje img{
+  .lenguaje img {
     max-width: 25%;
     max-height: 25%;
     align-self: center;
   }
 
-  #cancion{
+  #cancion {
     max-width: 250px;
     max-height: 250px;
   }
-  audio{
+  audio {
     max-width: auto;
     max-height: 200px;
   }
@@ -64,7 +61,7 @@
     margin-left: auto;
     gap: 3px;
   }
-  
+
   .lenguaje:nth-child(1) {
     grid-column: span 1;
   }
@@ -123,38 +120,37 @@
 }
 
 @media (max-width: 768px) and (min-width: 469px) {
-
-  .mensaje label{
+  .mensaje label {
     font-size: 2rem;
     text-align: center;
   }
-  
-  .tiktok video{
+
+  .tiktok video {
     align-self: center;
     max-height: 400px;
     max-width: 200px;
   }
 
-  table{
+  table {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .lenguaje img{
+  .lenguaje img {
     max-width: 25%;
     max-height: 25%;
     align-self: center;
   }
 
-  #cancion{
+  #cancion {
     max-width: 400px;
     max-height: 400px;
   }
-  audio{
+  audio {
     max-width: auto;
     max-height: 200px;
   }
-    
+
   .habilidad {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr 1fr;
@@ -178,8 +174,6 @@
     grid-row: span 1;
     grid-column: span 1;
   }
-
-  
 
   #idiomas {
     align-items: center;
@@ -242,11 +236,48 @@
 }
 
 @media (min-width: 769px) {
+  .mensaje label {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-  audio{
+  .mensaje{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .mensaje input{
+    align-self: center;
+    width: 468px;
+  }
+
+  .tiktok video {
+    align-self: center;
+    max-height: 80%;
+    max-width: auto;
+  }
+
+  table {
+    font-size: 4rem;
+    text-align: center;
+    border: 4;
+  }
+
+  .lenguaje img {
+    max-width: 25%;
+    max-height: 25%;
+    align-self: center;
+  }
+
+  #cancion {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  audio {
     max-width: auto;
     max-height: 200px;
   }
+
   .habilidad {
     grid-template-rows: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -257,8 +288,7 @@
   .lenguaje {
     gap: 5px;
   }
- 
-  
+
   .contLaboral {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -349,7 +379,7 @@ body {
   gap: 10px;
 }
 
-#idiomas{
+#idiomas {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,24 +418,23 @@ p {
 .nivel {
   color: #7b5144;
 }
-.cancionCont{
+.cancionCont {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
 }
 
-.mensaje{
+.mensaje {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-bottom: 10px;
 }
 
-.tiktok{
+.tiktok {
   display: flex;
   flex-direction: column;
-  
 }
 .lenguaje {
   display: flex;
