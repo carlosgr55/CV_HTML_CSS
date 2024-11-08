@@ -1,7 +1,12 @@
 @import url(https://db.onlinewebfonts.com/c/f88131c65699aa3628cba2f1ee8f60d8?family=Bauer+Bodoni+Black);
 
 @media (max-width: 468px) {
+  table{
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
+  
   .lenguaje {
     display: flex;
     flex-direction: column;
@@ -319,6 +324,13 @@ body {
   background-color: #d8b8ae;
   border-radius: 8px;
   gap: 10px;
+}
+
+#idiomas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 p {
