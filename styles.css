@@ -6,7 +6,11 @@
     text-align: center;
   }
   
-
+  .tiktok video{
+    align-self: center;
+    max-height: 400px;
+    max-width: 200px;
+  }
 
   table{
     font-size: 1.5rem;
@@ -384,4 +388,10 @@ p {
   flex-direction: column;
   gap: 5px;
   margin-bottom: 10px;
+}
+
+.tiktok{
+  display: flex;
+  flex-direction: column;
+  
 }
