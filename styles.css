@@ -7,7 +7,7 @@
     gap: 50px;
     align-items: center;
   }
-  #idiomas{
+  #idiomas {
     align-items: center;
   }
 
@@ -68,13 +68,37 @@
   }
 }
 
-@media (max-width: 768px) and (min-width: 468.1px) {
+@media (max-width: 768px) or (min-width: 469px) {
+  .flex-habi {
+    display: flex;
 
-    .contAcad{
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-    }
+    flex-direction: row;
+  }
+  .contHabi {
+    padding-left: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+  }
+  .habilidad{
+    padding-right: 30%;
+  }
+  .contHabi:nth-child(1) {
+    grid-column: span 1;
+  }
+
+  .contHabi:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  #idiomas {
+    align-items: center;
+  }
+  .contAcad {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
 
   .contLaboral {
     grid-template-columns: repeat(3, 1fr);
@@ -83,12 +107,13 @@
   }
 
   .laboral li {
-    margin-left: 10%;
-    font-size: 0.95rem;
+    text-align: left;
+    padding-right: 5%;
+    font-size: 0.80rem;
   }
   .contLaboral:nth-child(1) {
     grid-column: span 2;
-}
+  }
   .contLaboral:nth-child(2) {
     grid-column: span 1;
   }
@@ -110,7 +135,7 @@
   h2 {
     font-size: 2rem;
   }
-  h1{
+  h1 {
     font-size: 3rem;
   }
 
@@ -200,7 +225,7 @@ p {
   border-radius: 8px;
 }
 
-.idioma{
+.idioma {
   background-color: #ba9488;
   border-radius: 3px;
 }
